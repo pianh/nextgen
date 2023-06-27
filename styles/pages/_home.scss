@@ -1,14 +1,181 @@
-.test {
-    color: red;
-}
-
+//Laptop and Des
 @media (min-width: 1024px) {
+    .wrapper_home {
+        height: 5000px;
+        .home-background {
+            background-image: url(https://api.nextgenes.edu.vn/storage/slider-2-bg.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .slider__height-2 {
+            min-height: 900px;
+        }
+        .slider__content-2 {
+            margin-top: 30px;
+            span {
+                font-size: 18px;
+                font-weight: 500;
+                color: #01740d;
+                display: inline-block;
+                margin-bottom: 7px;
+            }
+            .slider__title-2 {
+                font-size: 60px;
+                font-weight: 700;
+                color: #0c140f;
+                letter-spacing: -0.03em;
+                margin-bottom: 13px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 28px;
+                color: #5f6160;
+                padding-right: 50px;
+                margin-bottom: 30px;
+            }
+            .tp-btn-green {
+                display: inline-block;
+                color: #fff;
+                font-weight: 500;
+                font-size: 15px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                padding: 0 30px;
+                border-radius: 6px;
+                background-color: #01740d;
+                text-decoration: none;
+            }
+        }
+        .slider__thumb-2 {
+            position: relative;
+            .slider__shape {
+                .slider__shape-1 {
+                    position: absolute;
+                    bottom: 18%;
+                    left: -18%;
+                    z-index: 11;
+                }
+                .slider__shape-2 {
+                    position: absolute;
+                    top: 0;
+                    left: -10%;
+                }
+                .slider__shape-3 {
+                    position: absolute;
+                    top: 10%;
+                    right: -19%;
+                }
+                .slider__shape-4 {
+                    position: absolute;
+                    bottom: -5%;
+                    left: -11%;
+                    -webkit-box-shadow: 0 40px 70px rgba(12, 20, 15, 0.1);
+                    -ms-box-shadow: 0 40px 70px rgba(12, 20, 15, 0.1);
+                    -o-box-shadow: 0 40px 70px rgba(12, 20, 15, 0.1);
+                    box-shadow: 0 40px 70px rgba(12, 20, 15, 0.1);
+                    border-radius: 10px;
+                    z-index: 11;
+                    -webkit-animation-duration: 5s;
+                    animation-duration: 5s;
+                    -webkit-animation-fill-mode: both;
+                    animation-fill-mode: both;
+                    -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+                    -webkit-animation-name: hero-bounce;
+                    animation-name: hero-bounce;
+                    animation: pulse 1.5s infinite alternate;
+                }
+                .slider__shape-5 {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    -webkit-box-shadow: 0 40px 60px rgba(95, 43, 0, 0.14);
+                    -ms-box-shadow: 0 40px 60px rgba(95, 43, 0, 0.14);
+                    -o-box-shadow: 0 40px 60px rgba(95, 43, 0, 0.14);
+                    box-shadow: 0 40px 60px rgba(95, 43, 0, 0.14);
+                    z-index: 11;
+                    border-radius: 10px;
+                    -webkit-animation: hero-shadow 3s ease-in-out infinite alternate;
+                    animation: hero-shadow 3s ease-in-out infinite alternate;
+                    animation: pulse 1.5s infinite alternate;
+                }
+            }
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.1);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+            .slider__thumb-mask {
+                position: relative;
+                display: inline-block;
+                width: 565px;
+                height: 590px;
+                text-align: center;
+                border-radius: 50%;
+                overflow: hidden;
+                z-index: 1;
+            }
 
+            .slider__thumb-mask:after {
+                position: absolute;
+                z-index: -1;
+                content: '';
+                top: 13%;
+                right: 0;
+                width: 467px;
+                height: 508px;
+                background: -webkit-linear-gradient(
+                    242.98deg,
+                    rgba(239, 161, 70, 0.7) -12.37%,
+                    rgba(239, 126, 70, 0) 66.8%
+                );
+                background: -moz-linear-gradient(
+                    242.98deg,
+                    rgba(239, 161, 70, 0.7) -12.37%,
+                    rgba(239, 126, 70, 0) 66.8%
+                );
+                background: linear-gradient(207.02deg, rgba(239, 161, 70, 0.7) -12.37%, rgba(239, 126, 70, 0) 66.8%);
+                border-radius: 50%;
+            }
+            .btn,
+            .transition-3,
+            :after,
+            :before,
+            a,
+            button,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            i,
+            img,
+            input,
+            li,
+            p,
+            select,
+            span,
+            svg path,
+            textarea {
+                -webkit-transition: all 0.3s ease-out 0s;
+                -moz-transition: all 0.3s ease-out 0s;
+                transition: all 0.3s ease-out 0s;
+            }
+        }
+    }
 }
-
+//Tablet
 @media (min-width: 740px) and (max-width: 1023px) {
-
 }
+//Mobile
 @media (max-width: 740px) {
-
 }

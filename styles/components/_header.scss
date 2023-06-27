@@ -1,0 +1,71 @@
+//Laptop and Des
+@media (min-width: 1024px) {
+    .header__transparent {
+        position: fixed !important;
+        left: 0;
+        margin: auto;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+        background: transparent;
+    }
+    .header-sticky {
+        background-color: #fff;
+        animation: fadeInDown 0.3s ease-in-out 0s 1 normal none running;
+        -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+        left: 0;
+        margin: auto;
+        top: 0;
+        width: 100%;
+    }
+    .header__bottom {
+        .logo img {
+            height: 90px;
+            width: auto;
+        }
+        .main-menu-border {
+            border: none;
+        }
+        .main-menu {
+            padding-left: 30px;
+            ul {
+                display: flex;
+                list-style: none;
+                text-decoration: none;
+                margin-bottom: 0;
+                padding-left: 0;
+                // boder
+                border-left: 1px solid #ccc;
+                li {
+                    padding: 5px 0px;
+                    margin: 0 15px;
+                    font-weight: 500;
+                    text-align: left;
+                    display: inline-block;
+                    a {
+                        text-decoration: none;
+                        color: #120101;
+                        &:hover {
+                            color: #01740d;
+                        }
+                    }
+                    .navbar-selected {
+                        color: #01740d;
+                    }
+
+                    ul {
+                        display: none;
+                    }
+                }
+                li:first-child {
+                }
+            }
+        }
+    }
+}
+//Tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+//Mobile
+@media (max-width: 740px) {
+}
