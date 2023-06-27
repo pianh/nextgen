@@ -18,6 +18,7 @@ export default function Home() {
                                 <div className="slider__content-2">
                                     <span>NextGen Education & Solutions</span>
                                     <h3 className="slider__title-2">Build an Incredible Learning Experience</h3>
+                                    <p>Đào tạo chuyên môn phục vụ cho các nhu cầu công việc tại nơi bạn làm</p>
                                     <a href="/khoa-hoc" className="tp-btn-green">
                                         Về chúng tôi
                                     </a>
@@ -83,7 +84,14 @@ export default function Home() {
                                         </a>
                                     </div>
                                     <div className="research__download">
-                                        <div className="research__download-bg include-bg"></div>
+                                        <div
+                                            className="research__download-bg include-bg"
+                                            style={{
+                                                backgroundImage:
+                                                    'url("https://api.nextgenes.edu.vn/storage/research-bg.webp")',
+                                            }}
+                                        ></div>
+
                                         <div className="research__content-2">
                                             <h3 className="research__title-2">Start Learning by Downloading Apps</h3>
                                         </div>
@@ -199,7 +207,7 @@ export default function Home() {
                                                 Melissa Jones
                                             </a>
                                         </h3>
-                                        <span>Professor</span>
+                                        <span className="team__designation">Professor</span>
                                         <p className="mk-truncate-3">
                                             Only a quid me old mucker squiffy tomfoolery grub cheers ruddy cor blimey
                                             guvnor in my flat, up the duff Eaton car
