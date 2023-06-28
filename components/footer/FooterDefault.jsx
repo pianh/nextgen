@@ -96,37 +96,39 @@ function FooterDefault() {
                         <div className="col-xxl-4 col-xl-4 col-lg-4">
                             <div className="footer__widget">
                                 <h3 class="footer__widget-title">Đăng ký nhận bản tin của chúng tôi</h3>
-                                <div className="footer__sub"></div>
-                                <p>
-                                    Nhận bản tin hàng tuần với các tài liệu giáo dục, sách nổi tiếng và nhiều hơn nữa!
-                                </p>
-                                <form method="post">
-                                    <div>
-                                        <div className="input-group">
-                                            <input name="name" placeholder="Họ và tên" className="form-control" />
+                                <div className="footer__sub">
+                                    <p>
+                                        Nhận bản tin hàng tuần với các tài liệu giáo dục, sách nổi tiếng và nhiều hơn
+                                        nữa!
+                                    </p>
+                                    <form method="post">
+                                        <div>
+                                            <div className="input-group">
+                                                <input name="name" placeholder="Họ và tên" className="form-control" />
+                                            </div>
+                                            <div class="form-error-msg">Vui lòng nhập tên</div>
                                         </div>
-                                        <div class="form-error-msg">Vui lòng nhập tên</div>
-                                    </div>
-                                    <div>
-                                        <div className="input-group">
-                                            <input name="phone" placeholder="Họ và tên" className="form-control" />
+                                        <div>
+                                            <div className="input-group">
+                                                <input
+                                                    name="phone"
+                                                    placeholder="Số điện thoại"
+                                                    className="form-control"
+                                                />
+                                            </div>
+                                            <div class="form-error-msg">Vui lòng nhập số điện thoại</div>
                                         </div>
-                                        <div class="form-error-msg">Vui lòng nhập số điện thoại</div>
-                                    </div>
-                                    <div>
-                                        <div className="input-group">
-                                            <input name="email" placeholder="Họ và tên" className="form-control" />
+                                        <div>
+                                            <div className="input-group">
+                                                <input name="email" placeholder="Email" className="form-control" />
+                                            </div>
+                                            <div class="form-error-msg">Vui lòng nhập Email</div>
                                         </div>
-                                        <div class="form-error-msg">Vui lòng nhập Email</div>
-                                    </div>
-                                    <button
-                                        type="submit"
-                                        className="tp-btn-subscribe btn btn-success"
-                                        style={{ minWidth: '100px' }}
-                                    >
-                                        Đăng ký
-                                    </button>
-                                </form>
+                                        <button type="submit" className="btn-subscribe" style={{ minWidth: '100px' }}>
+                                            Đăng ký
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -134,11 +136,10 @@ function FooterDefault() {
             </div>
             <div className="footer-bottom grey-bg">
                 <div className="container">
-                    <div className="footer__bottom-inner">
-                        <div className="row">
-                            <div className="col-xxl-12">
-                                <hr className="footer-bottom-line" />
-                                <span>© 2023 NextGen Education & Solutions. All Rights Reserved</span>
+                    <div className="row">
+                        <div className="col-xxl-12">
+                            <div className="footer__bottom-inner text-center d-flex justify-content-center align-items-center">
+                                <span className="">© 2023 NextGen Education & Solutions. All Rights Reserved</span>
                             </div>
                         </div>
                     </div>

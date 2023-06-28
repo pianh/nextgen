@@ -75,9 +75,46 @@
                 }
             }
         }
+        .footer__sub {
+            p {
+                font-size: 16px;
+                font-weight: var(--tp-fw-normal);
+                color: var(--tp-text-body);
+                margin-bottom: 15px;
+                line-height: 26px;
+            }
+            .form-error-msg {
+                display: none;
+            }
+            .input-group {
+                margin-bottom: 16px;
+            }
+            .btn-subscribe {
+                // align-items: end;
+                background-color: #01740d;
+                color: #ffffff;
+                font-family: Open Sans;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 48px;
+                padding: 0px 17px;
+                text-align: center;
+                border: none;
+                float: right;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
     }
 }
 
+.footer-bottom {
+    .footer__bottom-inner {
+        height: 70px;
+        border-top: 1px solid #ccc;
+    }
+}
 //Laptop and Des
 @media (min-width: 1024px) {
 }
