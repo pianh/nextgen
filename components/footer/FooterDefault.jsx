@@ -7,7 +7,7 @@ function FooterDefault() {
             <div className="footer-top pt-95 pb-45">
                 <div className="container">
                     <div className="row">
-                        <div className="col-xxl-4 col-xl-4 col-lg-4">
+                        <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
                             <div className="footer__widget footer-col-2-1 mb-50">
                                 <div className="footer__logo">
                                     <Link href="/">
@@ -51,7 +51,7 @@ function FooterDefault() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xxl-2 col-xl-2 col-lg-2">
+                        <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-6">
                             <div className="footer__widget">
                                 <h3 class="footer__widget-title">Explore</h3>
                                 <div className="footer__widget-content">
@@ -75,7 +75,7 @@ function FooterDefault() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xxl-2 col-xl-2 col-lg-2">
+                        <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-6">
                             <div className="footer__widget">
                                 <h3 class="footer__widget-title">Links</h3>
                                 <div className="footer__widget-content">
@@ -93,7 +93,7 @@ function FooterDefault() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xxl-4 col-xl-4 col-lg-4">
+                        <div className="col-xxl-4 col-xl-4 col-lg-4 col-12">
                             <div className="footer__widget">
                                 <h3 class="footer__widget-title">Đăng ký nhận bản tin của chúng tôi</h3>
                                 <div className="footer__sub">

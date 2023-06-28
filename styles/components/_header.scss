@@ -65,7 +65,13 @@
 }
 //Tablet
 @media (min-width: 740px) and (max-width: 1023px) {
+    .header-wrapper {
+        display: none;
+    }
 }
 //Mobile
 @media (max-width: 740px) {
+    .header-wrapper {
+        display: none;
+    }
 }

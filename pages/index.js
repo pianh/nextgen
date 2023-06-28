@@ -4,6 +4,7 @@ import Header from '../components/header/HeaderDefault';
 import Footer from '../components/footer/FooterDefault';
 import { Inter } from 'next/font/google';
 import SwiperEvaluate from '@/components/swiper/Swiper';
+import TeamEducation from '@/components/team/TeamEducation';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -187,126 +188,8 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-xxl-3 col-xl-3 col-lg-4 col-md-6">
-                                <div className="team__item text-center">
-                                    <div className="team__thumb">
-                                        <div className="team__shape">
-                                            <Image
-                                                srcset="https://nextgenes.edu.vn/img/team/team-shape-1.png"
-                                                alt="NextGen"
-                                                className=""
-                                            />
-                                        </div>
-                                        <Image
-                                            srcset="https://api.nextgenes.edu.vn/storage/team-sm-1.webp"
-                                            alt="NextGen"
-                                            className=""
-                                        />
-                                    </div>
-                                    <div className="team__content">
-                                        <h3 className="team__title">
-                                            <a href="https://nextgenes.edu.vn/doi-ngu/melissa-jones-9.html">
-                                                Melissa Jones
-                                            </a>
-                                        </h3>
-                                        <span className="team__designation">Professor</span>
-                                        <p className="mk-truncate-3">
-                                            Only a quid me old mucker squiffy tomfoolery grub cheers ruddy cor blimey
-                                            guvnor in my flat, up the duff Eaton car
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xxl-3 col-xl-3 col-lg-4 col-md-6">
-                                <div className="team__item text-center">
-                                    <div className="team__thumb">
-                                        <div className="team__shape">
-                                            <Image
-                                                srcset="https://nextgenes.edu.vn/img/team/team-shape-2.png"
-                                                alt="NextGen"
-                                                className=""
-                                            />
-                                        </div>
-                                        <Image
-                                            srcset="https://api.nextgenes.edu.vn/storage/team-sm-2.webp"
-                                            alt="NextGen"
-                                            className=""
-                                        />
-                                    </div>
-                                    <div className="team__content">
-                                        <h3 className="team__title">
-                                            <a href="https://nextgenes.edu.vn/doi-ngu/melissa-jones-9.html">
-                                                Morgan Key
-                                            </a>
-                                        </h3>
-                                        <span className="team__designation">Teacher MBA</span>
-                                        <p className="mk-truncate-3">
-                                            Only a quid me old mucker squiffy tomfoolery grub cheers ruddy cor blimey
-                                            guvnor in my flat, up the duff Eaton car
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xxl-3 col-xl-3 col-lg-4 col-md-6">
-                                <div className="team__item text-center">
-                                    <div className="team__thumb">
-                                        <div className="team__shape">
-                                            <Image
-                                                srcset="https://nextgenes.edu.vn/img/team/team-shape-1.png"
-                                                alt="NextGen"
-                                                className=""
-                                            />
-                                        </div>
-                                        <Image
-                                            srcset="https://api.nextgenes.edu.vn/storage/team-sm-1.webp"
-                                            alt="NextGen"
-                                            className=""
-                                        />
-                                    </div>
-                                    <div className="team__content">
-                                        <h3 className="team__title">
-                                            <a href="https://nextgenes.edu.vn/doi-ngu/melissa-jones-9.html">
-                                                Andra Flatcher
-                                            </a>
-                                        </h3>
-                                        <span className="team__designation">Lead Teacher</span>
-                                        <p className="mk-truncate-3">
-                                            Only a quid me old mucker squiffy tomfoolery grub cheers ruddy cor blimey
-                                            guvnor in my flat, up the duff Eaton car
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xxl-3 col-xl-3 col-lg-4 col-md-6">
-                                <div className="team__item text-center">
-                                    <div className="team__thumb">
-                                        <div className="team__shape">
-                                            <Image
-                                                srcset="https://nextgenes.edu.vn/img/team/team-shape-1.png"
-                                                alt="NextGen"
-                                                className=""
-                                            />
-                                        </div>
-                                        <Image
-                                            srcset="https://api.nextgenes.edu.vn/storage/team-sm-1.webp"
-                                            alt="NextGen"
-                                            className=""
-                                        />
-                                    </div>
-                                    <div className="team__content">
-                                        <h3 className="team__title">
-                                            <a href="https://nextgenes.edu.vn/doi-ngu/melissa-jones-9.html">
-                                                Oliver Porter
-                                            </a>
-                                        </h3>
-                                        <span className="team__designation">Photographer</span>
-                                        <p className="mk-truncate-3">
-                                            Only a quid me old mucker squiffy tomfoolery grub cheers ruddy cor blimey
-                                            guvnor in my flat, up the duff Eaton car
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            {/* Team Card */}
+                            <TeamEducation />
                         </div>
                     </div>
                 </section>

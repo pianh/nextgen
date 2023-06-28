@@ -533,7 +533,205 @@
 }
 //Tablet
 @media (min-width: 740px) and (max-width: 1023px) {
+    .slider__area {
+        min-height: 1000px;
+    }
+    .slider__thumb-2 {
+        .slider__shape {
+            .slider__shape-4 {
+                left: 0%;
+                bottom: -15%;
+            }
+        }
+    }
+    .research__area {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+    .team__area {
+        margin-top: 80px;
+        padding-top: 0 !important;
+        .team__wrapper {
+            padding-left: 0;
+            margin-top: 20px;
+        }
+    }
+    .category__area {
+        padding-top: 80px;
+        .category__item-wrapper {
+            margin-top: 50px;
+        }
+    }
+    .brand__item-wrapper {
+        margin-top: 50px;
+        padding: 0 12px;
+    }
 }
 //Mobile
 @media (max-width: 740px) {
+    .slider__height-2 {
+        min-height: 600px;
+    }
+    .slider__content-2 {
+        text-align: center;
+        .slider__title-2 {
+            font-size: 30px;
+        }
+        p {
+            padding-right: 0;
+        }
+    }
+    .slider__shape-4,
+    .slider__shape-5 {
+        display: none;
+    }
+    .slider__thumb-2 {
+        text-align: center;
+        .slider__thumb-mask {
+            width: 290px;
+            height: 290px;
+            margin-top: 50px;
+        }
+    }
+    .research__area {
+        padding-top: 50px;
+    }
+
+    .research__area {
+        padding-bottom: 0;
+        .research__wrapper-2 {
+            .section__title-pre {
+                display: block;
+                text-align: center;
+            }
+            .section__title {
+                font-size: 26px;
+                text-align: center;
+                font-weight: 800;
+                margin-bottom: 14px;
+                color: #000;
+            }
+            p {
+                padding-right: 0;
+                text-align: center;
+            }
+            .research__download {
+                height: 450px;
+            }
+        }
+        .research__btn-2 {
+            text-align: center;
+        }
+
+        .research__title-2 {
+            width: 100%;
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+    .research__area .research__wrapper-2 .research__download .research__content-2 {
+        position: relative;
+        width: 100%;
+        z-index: 11;
+    }
+    .research__thumb-2 {
+        width: 100%;
+        right: 50%;
+        left: unset;
+    }
+    .research__features-icon {
+        margin-right: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .research__features-content {
+        text-align: center;
+    }
+    .team__area {
+        margin-top: 0 !important;
+
+        .section__title-pre {
+            display: block;
+            text-align: center;
+        }
+        .section__title {
+            font-size: 26px;
+            text-align: center;
+            font-weight: 800;
+            margin-bottom: 14px;
+            color: #000;
+        }
+    }
+    .team__area .team__wrapper {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .team__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .category__area {
+        padding-top: 70px;
+        padding-right: 0;
+        .section__title-wrapper-2 {
+            padding-right: 0;
+            text-align: center;
+        }
+    }
+    .category__wrapper {
+        margin-bottom: 30px;
+    }
+    .course__item {
+        margin-bottom: 30px;
+    }
+    .course__area {
+        padding-top: 50px;
+        .section__title-pre {
+            display: block;
+            text-align: center;
+        }
+        .section__title {
+            font-size: 26px;
+            text-align: center;
+            font-weight: 800;
+            margin-bottom: 14px;
+            color: #000;
+        }
+    }
+    .evaluate__area {
+        .section__title-pre {
+            display: block;
+            text-align: center;
+        }
+        .section__title {
+            font-size: 26px;
+            text-align: center;
+            font-weight: 800;
+            margin-bottom: 14px;
+            color: #000;
+        }
+    }
+    .brand__area {
+        padding-top: 0;
+        .brand__item-wrapper {
+            margin-top: 40px;
+            padding-left: 0;
+        }
+    }
+    .brand__wrapper {
+        .section__title-wrapper-2 {
+            padding: 0;
+            text-align: center;
+        }
+    }
+    .brand__item {
+        margin-bottom: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
 }
