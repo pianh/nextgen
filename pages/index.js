@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Header from '../components/header/HeaderDefault';
 import Footer from '../components/footer/FooterDefault';
 import { Inter } from 'next/font/google';
+import SwiperEvaluate from '@/components/swiper/Swiper';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -238,7 +239,7 @@ export default function Home() {
                                                 Morgan Key
                                             </a>
                                         </h3>
-                                        <span>Teacher MBA</span>
+                                        <span className="team__designation">Teacher MBA</span>
                                         <p className="mk-truncate-3">
                                             Only a quid me old mucker squiffy tomfoolery grub cheers ruddy cor blimey
                                             guvnor in my flat, up the duff Eaton car
@@ -268,7 +269,7 @@ export default function Home() {
                                                 Andra Flatcher
                                             </a>
                                         </h3>
-                                        <span>Lead Teacher</span>
+                                        <span className="team__designation">Lead Teacher</span>
                                         <p className="mk-truncate-3">
                                             Only a quid me old mucker squiffy tomfoolery grub cheers ruddy cor blimey
                                             guvnor in my flat, up the duff Eaton car
@@ -298,7 +299,7 @@ export default function Home() {
                                                 Oliver Porter
                                             </a>
                                         </h3>
-                                        <span>Photogrepher</span>
+                                        <span className="team__designation">Photographer</span>
                                         <p className="mk-truncate-3">
                                             Only a quid me old mucker squiffy tomfoolery grub cheers ruddy cor blimey
                                             guvnor in my flat, up the duff Eaton car
@@ -315,9 +316,11 @@ export default function Home() {
                         <div className="row">
                             <div className="col-xxl-4 col-xl-4 col-lg-4">
                                 <div className="category__wrapper">
-                                    <div className="section__title-wrapper">
-                                        <span className="section__title-pre">Danh mục</span>
-                                        <h3 className="section__title section__title-29">CÁC KHÓA HỌC TẠI NEXTGEN</h3>
+                                    <div className="section__title-wrapper-2">
+                                        <span className="section__title-pre-2">Danh mục</span>
+                                        <h3 className="section__title-2 section__title-2-29">
+                                            CÁC KHÓA HỌC TẠI NEXTGEN
+                                        </h3>
                                     </div>
                                     <p>Look into yourself, get something in return as your achievement</p>
                                     <div className="category__btn">
@@ -687,12 +690,115 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                {/* Review */}
+                {/* Evaluate */}
                 <section className="evaluate__area pt-80 pb-120">
                     <div className="container">
                         <div className="row">
                             <div className="col-xxl-12">
-                                <div className="section__title-wrapper"></div>
+                                <div className="section__title-wrapper mb-40 text-center">
+                                    <div className="section__title-pre">Đánh Giá</div>
+                                    <div className="section__title">KHÁCH HÀNG CỦA CHÚNG TÔI NÓI GÌ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="evaluate__slider">
+                                <SwiperEvaluate />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* Brand */}
+                <section className="brand__area pt-110 pb-70">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-xxl-4 col-xl-4 col-lg-4">
+                                <div className="brand__wrapper">
+                                    <div className="section__title-wrapper-2">
+                                        <span className="section__title-pre-2">Đối Tác Của</span>
+                                        <h3 className="section__title-2 section__title-2-29">
+                                            NEXTGEN EDUCATION & SOLUTIONS
+                                        </h3>
+                                    </div>
+                                    <p>
+                                        You can list your partners or instructors is brands here to show off your site
+                                        is reputation
+                                    </p>
+                                    <div className="category__btn">
+                                        <a className="tp-btn-5" href="/khoa-hoc">
+                                            Xem tất cả
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xxl-8 col-xl-8 col-lg-8">
+                                <div className="brand__item-wrapper pl-100">
+                                    <div className="row align-items-center">
+                                        <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
+                                            <div className="brand__item">
+                                                <Image
+                                                    srcset="https://api.nextgenes.edu.vn/storage/brand-1.webp"
+                                                    alt="NextGen"
+                                                    className=""
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
+                                            <div className="brand__item">
+                                                <Image
+                                                    srcset="https://api.nextgenes.edu.vn/storage/brand-1.webp"
+                                                    alt="NextGen"
+                                                    className=""
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
+                                            <div className="brand__item">
+                                                <Image
+                                                    srcset="https://api.nextgenes.edu.vn/storage/brand-2.webp"
+                                                    alt="NextGen"
+                                                    className=""
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
+                                            <div className="brand__item">
+                                                <Image
+                                                    srcset="https://api.nextgenes.edu.vn/storage/brand-2.webp"
+                                                    alt="NextGen"
+                                                    className=""
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
+                                            <div className="brand__item">
+                                                <Image
+                                                    srcset="https://api.nextgenes.edu.vn/storage/brand-1.webp"
+                                                    alt="NextGen"
+                                                    className=""
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
+                                            <div className="brand__item">
+                                                <Image
+                                                    srcset="https://api.nextgenes.edu.vn/storage/brand-5.webp"
+                                                    alt="NextGen"
+                                                    className=""
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
+                                            <div className="brand__item">
+                                                <Image
+                                                    srcset="https://api.nextgenes.edu.vn/storage/brand-5.webp"
+                                                    alt="NextGen"
+                                                    className=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
