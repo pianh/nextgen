@@ -1,0 +1,76 @@
+//CSS general Website
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mr-5 {
+    margin-right: 5px;
+}
+.pt-110 {
+    padding-top: 110px;
+}
+
+.pb-90 {
+    padding-bottom: 90px;
+}
+
+.include-bg {
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.white-bg {
+    background: #fff;
+}
+.fix {
+    overflow: hidden;
+}
+.mk-truncate-1,
+.mk-truncate-2 {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.mk-truncate-1 {
+    -webkit-line-clamp: 1;
+}
+.section__title-pre,
+.section__title-pre-2 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #01740d;
+    display: inline-block;
+}
+.section__title-2 {
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #212529;
+}
+.tp-btn-5 {
+    display: inline-block;
+    color: #0c140f;
+    font-weight: 500;
+    font-size: 14px;
+    height: 44px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 34px;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 2px solid rgba(12, 20, 15, 0.1);
+    text-decoration: none;
+    &:hover {
+        background-color: #01740d;
+        color: #fff;
+        border-color: #01740d;
+    }
+}
+
+.grey-bg {
+    background: var(--tp-grey-4);
+}

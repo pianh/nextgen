@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
     return (
         <>
-            <Header />
             <main className="wrapper_home">
+                {/* Background */}
                 <section className="home-background slider__area slider__height-2 include-bg d-flex align-items-center">
                     <div className="container">
                         <div className="row align-items-center">
@@ -65,14 +65,15 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+                {/* Research */}
                 <section className="research__area">
                     <div className="container">
                         <div className="row">
                             <div className="col-xxl-6 col-xl-6 col-lg-6">
                                 <div className="research__wrapper-2">
-                                    <div className="section__title-wrapper-2">
-                                        <span className="section__title-pre-2">NextGen</span>
-                                        <h3 className="section__title-2">Education & Solutions</h3>
+                                    <div className="section__title-wrapper">
+                                        <span className="section__title-pre">NextGen</span>
+                                        <h3 className="section__title">Education & Solutions</h3>
                                     </div>
                                     <p>
                                         Learn from anywhere in the world on desktop, or mobile phone with an Internet
@@ -170,9 +171,9 @@ export default function Home() {
                     <div className="container">
                         <div className="row align-items-start">
                             <div className="col-xxl-6 col-xl-6 col-lg-6">
-                                <div className="section__title-wrapper-2">
-                                    <span className="section__title-pre-2">Đội ngũ giáo viên giỏi tại</span>
-                                    <h3 className="section__title-2">NEXTGEN EDUCATION & SOLUTIONS</h3>
+                                <div className="section__title-wrapper">
+                                    <span className="section__title-pre">Đội ngũ giáo viên giỏi tại</span>
+                                    <h3 className="section__title">NEXTGEN EDUCATION & SOLUTIONS</h3>
                                 </div>
                             </div>
                             <div className="col-xxl-6 col-xl-6 col-lg-6">
@@ -314,11 +315,9 @@ export default function Home() {
                         <div className="row">
                             <div className="col-xxl-4 col-xl-4 col-lg-4">
                                 <div className="category__wrapper">
-                                    <div className="section__title-wrapper-2">
-                                        <span className="section__title-pre-2">Danh mục</span>
-                                        <h3 className="section__title-2 section__title-2-29">
-                                            CÁC KHÓA HỌC TẠI NEXTGEN
-                                        </h3>
+                                    <div className="section__title-wrapper">
+                                        <span className="section__title-pre">Danh mục</span>
+                                        <h3 className="section__title section__title-29">CÁC KHÓA HỌC TẠI NEXTGEN</h3>
                                     </div>
                                     <p>Look into yourself, get something in return as your achievement</p>
                                     <div className="category__btn">
@@ -488,13 +487,13 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Course */}
-                <section className="category__area">
+                <section className="course__area grey-bg pt-110 pb-90">
                     <div className="container">
                         <div className="row">
                             <div className="col-xxl-12">
-                                <div className="section__title-wrapper-2 text-center mb-40">
-                                    <div className="section__title-pre-2">Khóa học</div>
-                                    <div className="section__title-2">CÁC KHÓA HỌC PHỔ BIẾN NHẤT</div>
+                                <div className="section__title-wrapper text-center mb-40">
+                                    <div className="section__title-pre">Khóa học</div>
+                                    <div className="section__title">CÁC KHÓA HỌC PHỔ BIẾN NHẤT</div>
                                 </div>
                             </div>
                         </div>
@@ -684,6 +683,16 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* Review */}
+                <section className="evaluate__area pt-80 pb-120">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-xxl-12">
+                                <div className="section__title-wrapper"></div>
                             </div>
                         </div>
                     </div>

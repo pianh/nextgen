@@ -1,8 +1,6 @@
-@import './components/footer';
-@import './components/header';
-@import './base/base';
-@import './base/reset';
-
+@import './abstracts/abstracts';
+@import './components/components';
+@import './base/base'; //Page
 @import './pages/home';
 // @tailwind base;
 // @tailwind components;
