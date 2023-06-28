@@ -5,10 +5,39 @@ import Footer from '../components/footer/FooterDefault';
 import { Inter } from 'next/font/google';
 import SwiperEvaluate from '@/components/swiper/Swiper';
 import TeamEducation from '@/components/team/TeamEducation';
+import CategoryItems from '@/components/cate/cate';
+import NavTabs from '@/components/nav/NavTabs';
+import CourseItems from '@/components/course/CourseItems';
+import { useEffect, useState } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
+    const [isVisible, setIsVisible] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            const offset = 200; // Distance from the element before the effect is triggered
+
+            if (scrollTop > windowHeight - offset) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        };
+
+        const refreshList = () => {
+            // Your refreshList logic here
+        };
+
+        refreshList();
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <>
             <main className="wrapper_home">
@@ -68,7 +97,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Research */}
-                <section className="research__area">
+                <section className={`research__area ${isVisible ? 'animate__animated animate__fadeInRight' : ''}`}>
                     <div className="container">
                         <div className="row">
                             <div className="col-xxl-6 col-xl-6 col-lg-6">
@@ -169,7 +198,10 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section className="team__area pt-5" style={{ marginTop: '100px' }}>
+                <section
+                    className={`team__area pt-5 ${isVisible ? 'animate__animated animate__fadeInRight' : ''}`}
+                    style={{ marginTop: '100px' }}
+                >
                     <div className="container">
                         <div className="row align-items-start">
                             <div className="col-xxl-6 col-xl-6 col-lg-6">
@@ -216,146 +248,7 @@ export default function Home() {
                             <div className="col-xxl-8 col-xl-8 col-lg-8">
                                 <div className="category__item-wrapper">
                                     <div className="row">
-                                        <div className="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
-                                            <div className="category__item text-center mb-45">
-                                                <div className="category__icon">
-                                                    <a href="/khoa-hoc/art-design">
-                                                        <Image
-                                                            srcset="https://api.nextgenes.edu.vn/storage/art-design-icon.webp"
-                                                            alt="NextGen"
-                                                            className=""
-                                                        />
-                                                    </a>
-                                                </div>
-                                                <div className="category__content">
-                                                    <h4 className="category__title">
-                                                        <a href="/khoa-hoc/art-design" className="category__title">
-                                                            Art & Design
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
-                                            <div className="category__item text-center mb-45">
-                                                <div className="category__icon">
-                                                    <a href="/khoa-hoc/art-design">
-                                                        <Image
-                                                            srcset="https://api.nextgenes.edu.vn/storage/art-design-icon.webp"
-                                                            alt="NextGen"
-                                                            className=""
-                                                        />
-                                                    </a>
-                                                </div>
-                                                <div className="category__content">
-                                                    <h4 className="category__title">
-                                                        <a href="/khoa-hoc/art-design" className="category__title">
-                                                            Art & Design
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
-                                            <div className="category__item text-center mb-45">
-                                                <div className="category__icon">
-                                                    <a href="/khoa-hoc/art-design">
-                                                        <Image
-                                                            srcset="https://api.nextgenes.edu.vn/storage/art-design-icon.webp"
-                                                            alt="NextGen"
-                                                            className=""
-                                                        />
-                                                    </a>
-                                                </div>
-                                                <div className="category__content">
-                                                    <h4 className="category__title">
-                                                        <a href="/khoa-hoc/art-design" className="category__title">
-                                                            Art & Design
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
-                                            <div className="category__item text-center mb-45">
-                                                <div className="category__icon">
-                                                    <a href="/khoa-hoc/art-design">
-                                                        <Image
-                                                            srcset="https://api.nextgenes.edu.vn/storage/art-design-icon.webp"
-                                                            alt="NextGen"
-                                                            className=""
-                                                        />
-                                                    </a>
-                                                </div>
-                                                <div className="category__content">
-                                                    <h4 className="category__title">
-                                                        <a href="/khoa-hoc/art-design" className="category__title">
-                                                            Art & Design
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
-                                            <div className="category__item text-center mb-45">
-                                                <div className="category__icon">
-                                                    <a href="/khoa-hoc/art-design">
-                                                        <Image
-                                                            srcset="https://api.nextgenes.edu.vn/storage/art-design-icon.webp"
-                                                            alt="NextGen"
-                                                            className=""
-                                                        />
-                                                    </a>
-                                                </div>
-                                                <div className="category__content">
-                                                    <h4 className="category__title">
-                                                        <a href="/khoa-hoc/art-design" className="category__title">
-                                                            Art & Design
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
-                                            <div className="category__item text-center mb-45">
-                                                <div className="category__icon">
-                                                    <a href="/khoa-hoc/art-design">
-                                                        <Image
-                                                            srcset="https://api.nextgenes.edu.vn/storage/art-design-icon.webp"
-                                                            alt="NextGen"
-                                                            className=""
-                                                        />
-                                                    </a>
-                                                </div>
-                                                <div className="category__content">
-                                                    <h4 className="category__title">
-                                                        <a href="/khoa-hoc/art-design" className="category__title">
-                                                            Art & Design
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
-                                            <div className="category__item text-center mb-45">
-                                                <div className="category__icon">
-                                                    <a href="/khoa-hoc/art-design">
-                                                        <Image
-                                                            srcset="https://api.nextgenes.edu.vn/storage/art-design-icon.webp"
-                                                            alt="NextGen"
-                                                            className=""
-                                                        />
-                                                    </a>
-                                                </div>
-                                                <div className="category__content">
-                                                    <h4 className="category__title">
-                                                        <a href="/khoa-hoc/art-design" className="category__title">
-                                                            Art & Design
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <CategoryItems />
                                         <div className="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6">
                                             <div className="category__item text-center mb-45">
                                                 <div className="category__icon add">
@@ -386,190 +279,12 @@ export default function Home() {
                         <div className="row">
                             <div className="col-xxl-12">
                                 <div className="course__filter text-center mb-30">
-                                    <nav>
-                                        <div class="nav nav-tabs justify-content-center" id="course-tab" role="tablist">
-                                            <button
-                                                class="nav-link active"
-                                                id="nav-all-tab"
-                                                data-bs-toggle="tab"
-                                                data-bs-target="#nav-all"
-                                                type="button"
-                                                role="tab"
-                                                aria-controls="nav-all"
-                                                aria-selected="true"
-                                            >
-                                                Tất cả
-                                            </button>
-                                            <button
-                                                class="nav-link"
-                                                id="nav-trending-tab"
-                                                data-bs-toggle="tab"
-                                                data-bs-target="#nav-trending"
-                                                type="button"
-                                                role="tab"
-                                                aria-controls="nav-trending"
-                                                aria-selected="false"
-                                                tabindex="-1"
-                                            >
-                                                Trending
-                                            </button>
-                                            <button
-                                                class="nav-link"
-                                                id="nav-popularity-tab"
-                                                data-bs-toggle="tab"
-                                                data-bs-target="#nav-popularity"
-                                                type="button"
-                                                role="tab"
-                                                aria-controls="nav-popularity"
-                                                aria-selected="false"
-                                                tabindex="-1"
-                                            >
-                                                Popularity
-                                            </button>
-                                            <button
-                                                class="nav-link"
-                                                id="nav-featured-tab"
-                                                data-bs-toggle="tab"
-                                                data-bs-target="#nav-featured"
-                                                type="button"
-                                                role="tab"
-                                                aria-controls="nav-featured"
-                                                aria-selected="false"
-                                                tabindex="-1"
-                                            >
-                                                Featured
-                                            </button>
-                                            <button
-                                                class="nav-link"
-                                                id="nav-design-architect-tab"
-                                                data-bs-toggle="tab"
-                                                data-bs-target="#nav-design-architect"
-                                                type="button"
-                                                role="tab"
-                                                aria-controls="nav-design-architect"
-                                                aria-selected="false"
-                                                tabindex="-1"
-                                            >
-                                                Design Architect
-                                            </button>
-                                        </div>
-                                    </nav>
+                                    <NavTabs />
                                 </div>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
-                                <div className="course__item transition-3 white-bg">
-                                    <div className="course__thumb course_thumb_height fix">
-                                        <a href="https://nextgenes.edu.vn/khoa-hoc/university-seminar-series-global-2-19.html">
-                                            <Image
-                                                srcset="https://api.nextgenes.edu.vn/storage/course-2.webp"
-                                                alt="NextGen"
-                                                className=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div className="course__content">
-                                        <div className="course__top">
-                                            <div className="course__tag">
-                                                <a href="/khoa-hoc/marketing">Marketing</a>
-                                            </div>
-                                        </div>
-                                        <h3 className="course__title mk-truncate-1">
-                                            <a href="/khoa-hoc/university-seminar-series-global-2-19.html">
-                                                University seminar series global 2.
-                                            </a>
-                                        </h3>
-                                        <div className="bottom d-flex align-items-center justify-content-between">
-                                            <div className="course__action">
-                                                <ul>
-                                                    <li>
-                                                        <div className="course__action-item">
-                                                            <div className="course__action-icon mr-5">
-                                                                <span>
-                                                                    <i class="fa-regular fa-user"></i>
-                                                                </span>
-                                                            </div>
-                                                            <div className="course__action-content">
-                                                                <span>Brian Cumin</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="course__action-item">
-                                                            <div className="course__action-icon mr-5">
-                                                                <span>
-                                                                    <i class="fa-regular fa-eye"></i>
-                                                                </span>
-                                                            </div>
-                                                            <div className="course__action-content">
-                                                                <span>0 học sinh</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div className="course__tutor">Tiếng Anh</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
-                                <div className="course__item transition-3 white-bg">
-                                    <div className="course__thumb course_thumb_height fix">
-                                        <a href="https://nextgenes.edu.vn/khoa-hoc/university-seminar-series-global-2-19.html">
-                                            <Image
-                                                srcset="https://api.nextgenes.edu.vn/storage/course-2.webp"
-                                                alt="NextGen"
-                                                className=""
-                                            />
-                                        </a>
-                                    </div>
-                                    <div className="course__content">
-                                        <div className="course__top">
-                                            <div className="course__tag">
-                                                <a href="/khoa-hoc/marketing">Marketing</a>
-                                            </div>
-                                        </div>
-                                        <h3 className="course__title mk-truncate-1">
-                                            <a href="/khoa-hoc/university-seminar-series-global-2-19.html">
-                                                University seminar series global 2.
-                                            </a>
-                                        </h3>
-                                        <div className="bottom d-flex align-items-center justify-content-between">
-                                            <div className="course__action">
-                                                <ul>
-                                                    <li>
-                                                        <div className="course__action-item">
-                                                            <div className="course__action-icon mr-5">
-                                                                <span>
-                                                                    <i class="fa-regular fa-user"></i>
-                                                                </span>
-                                                            </div>
-                                                            <div className="course__action-content">
-                                                                <span>Brian Cumin</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="course__action-item">
-                                                            <div className="course__action-icon mr-5">
-                                                                <span>
-                                                                    <i class="fa-regular fa-eye"></i>
-                                                                </span>
-                                                            </div>
-                                                            <div className="course__action-content">
-                                                                <span>0 học sinh</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div className="course__tutor">Tiếng Anh</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <CourseItems />
                         </div>
                     </div>
                 </section>
@@ -592,7 +307,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Brand */}
-                <section className="brand__area pt-110 pb-70">
+                <section className={`brand__area pt-110 pb-70 ${isVisible ? 'animate__zoomIn' : ''}`}>
                     <div className="container">
                         <div className="row">
                             <div className="col-xxl-4 col-xl-4 col-lg-4">
