@@ -18,7 +18,7 @@ export default function Home() {
         const handleScroll = () => {
             const scrollTop = window.pageYOffset;
             const windowHeight = window.innerHeight;
-            const offset = 200; // Distance from the element before the effect is triggered
+            const offset = 200;
 
             if (scrollTop > windowHeight - offset) {
                 setIsVisible(true);
@@ -27,9 +27,7 @@ export default function Home() {
             }
         };
 
-        const refreshList = () => {
-            // Your refreshList logic here
-        };
+        const refreshList = () => {};
 
         refreshList();
         window.addEventListener('scroll', handleScroll);
@@ -266,7 +264,11 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Course */}
-                <section className="course__area grey-bg pt-110 pb-90">
+                <section
+                    className={`course__area grey-bg pt-110 pb-90 ${
+                        isVisible ? 'animate__animated animate__fadeInLeft' : ''
+                    }`}
+                >
                     <div className="container">
                         <div className="row">
                             <div className="col-xxl-12">
