@@ -10,15 +10,15 @@ const SwiperEvaluate = () => {
         const swiper = new Swiper('.swiper-container', {
             direction: 'horizontal', // Hướng trượt
             loop: true, // Vòng lặp trượt
-            slidesPerView: 3, // Số slide hiển thị trên mỗi view
-            spaceBetween: 10, // Khoảng cách giữa các slide
+            slidesPerView: 3, //w
+            spaceBetween: 10, // Khoảng cách
             autoplay: {
                 delay: 3000, // Thời gian trễ giữa các slide (ms)
-                disableOnInteraction: false, // Tắt autoplay khi người dùng tương tác
+                disableOnInteraction: false, // Tắt autoplay
             },
             navigation: {
-                nextEl: '.swiper-button-next', // Selector của nút next
-                prevEl: '.swiper-button-prev', // Selector của nút prev
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         });
 
@@ -36,7 +36,7 @@ const SwiperEvaluate = () => {
                         <div className="evaluate__item transition-3 text-center white-bg">
                             <div className="evaluate__avatar">
                                 <Image
-                                    srcset="https://api.nextgenes.edu.vn/storage/testimonial-4.webp"
+                                    srcset="https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/cms/924938296DirectSalesRepresentative.jpg"
                                     alt="NextGen"
                                     className=""
                                 />
