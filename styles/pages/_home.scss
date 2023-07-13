@@ -533,6 +533,9 @@
 }
 //Tablet
 @media (min-width: 740px) and (max-width: 1023px) {
+    .slider__content-2 {
+        margin-top: 50px !important;
+    }
     .slider__area {
         min-height: 1000px;
     }
@@ -574,6 +577,9 @@
     }
     .slider__content-2 {
         text-align: center;
+
+        margin-top: 100px;
+
         .slider__title-2 {
             font-size: 30px;
         }

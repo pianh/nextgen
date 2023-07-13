@@ -59,19 +59,41 @@
             }
         }
     }
+    .header__bottom-right {
+        #check {
+            display: none;
+        }
+        .checkbtn {
+            font-size: 20px;
+            line-height: 90px;
+            cursor: pointer;
+            display: none;
+        }
+    }
 }
 //Laptop and Des
 @media (min-width: 1024px) {
 }
 //Tablet
 @media (min-width: 740px) and (max-width: 1023px) {
-    .header-wrapper {
-        display: none;
+    .main-menu {
+        ul {
+            li {
+                a {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .header__bottom-right {
+        #check {
+            display: block;
+        }
+        .checkbtn {
+            display: block;
+        }
     }
 }
 //Mobile
 @media (max-width: 740px) {
-    .header-wrapper {
-        display: none;
-    }
 }

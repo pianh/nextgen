@@ -20,7 +20,7 @@ function HeaderDefault() {
     }, []);
     return (
         <header className="header-wrapper">
-            <div id="header-sticky" class={`header__area header__transparent ${isSticky ? 'header-sticky' : ''}`}>
+            <div id="header-sticky" className={`header__area header__transparent ${isSticky ? 'header-sticky' : ''}`}>
                 <div className="header__bottom">
                     <div className="container">
                         <div className="row align-items-center">
@@ -74,7 +74,10 @@ function HeaderDefault() {
                             </div>
                             <div className="col-lg-1 col-xl-1 col-6">
                                 <div className="header__bottom-right">
-                                    <span></span>
+                                    <input type="checkbox" id="check" />
+                                    <label type="check" className="checkbtn">
+                                        <i class="fas fa-bars"></i>
+                                    </label>
                                 </div>
                             </div>
                         </div>

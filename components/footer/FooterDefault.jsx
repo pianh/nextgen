@@ -33,17 +33,17 @@ function FooterDefault() {
                                         <ul>
                                             <li>
                                                 <a href="" target="_blank">
-                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                    <i className="fa-brands fa-facebook-f"></i>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="nextgen" target="_blank" rel="noreferrer">
-                                                    <i class="fa-brands fa-twitter"></i>
+                                                    <i className="fa-brands fa-twitter"></i>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="nextgen" target="_blank" rel="noreferrer">
-                                                    <i class="fa-brands fa-linkedin-in"></i>
+                                                    <i className="fa-brands fa-linkedin-in"></i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -53,7 +53,7 @@ function FooterDefault() {
                         </div>
                         <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-6">
                             <div className="footer__widget">
-                                <h3 class="footer__widget-title">Explore</h3>
+                                <h3 className="footer__widget-title">Explore</h3>
                                 <div className="footer__widget-content">
                                     <ul>
                                         <li>
@@ -77,7 +77,7 @@ function FooterDefault() {
                         </div>
                         <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-6">
                             <div className="footer__widget">
-                                <h3 class="footer__widget-title">Links</h3>
+                                <h3 className="footer__widget-title">Links</h3>
                                 <div className="footer__widget-content">
                                     <ul>
                                         <li>
@@ -95,7 +95,7 @@ function FooterDefault() {
                         </div>
                         <div className="col-xxl-4 col-xl-4 col-lg-4 col-12">
                             <div className="footer__widget">
-                                <h3 class="footer__widget-title">Đăng ký nhận bản tin của chúng tôi</h3>
+                                <h3 className="footer__widget-title">Đăng ký nhận bản tin của chúng tôi</h3>
                                 <div className="footer__sub">
                                     <p>
                                         Nhận bản tin hàng tuần với các tài liệu giáo dục, sách nổi tiếng và nhiều hơn
@@ -106,7 +106,7 @@ function FooterDefault() {
                                             <div className="input-group">
                                                 <input name="name" placeholder="Họ và tên" className="form-control" />
                                             </div>
-                                            <div class="form-error-msg">Vui lòng nhập tên</div>
+                                            <div className="form-error-msg">Vui lòng nhập tên</div>
                                         </div>
                                         <div>
                                             <div className="input-group">
@@ -116,13 +116,13 @@ function FooterDefault() {
                                                     className="form-control"
                                                 />
                                             </div>
-                                            <div class="form-error-msg">Vui lòng nhập số điện thoại</div>
+                                            <div className="form-error-msg">Vui lòng nhập số điện thoại</div>
                                         </div>
                                         <div>
                                             <div className="input-group">
                                                 <input name="email" placeholder="Email" className="form-control" />
                                             </div>
-                                            <div class="form-error-msg">Vui lòng nhập Email</div>
+                                            <div className="form-error-msg">Vui lòng nhập Email</div>
                                         </div>
                                         <button type="submit" className="btn-subscribe" style={{ minWidth: '100px' }}>
                                             Đăng ký
